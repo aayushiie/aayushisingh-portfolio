@@ -448,6 +448,10 @@ li{
 }
 
 @media (max-width: 576px) {
+    #custom-cursor{
+        visibility: hidden;
+    }
+
     .container{
         margin-top: 7rem;
     }
@@ -482,9 +486,8 @@ li{
 }
 
 @media (max-width: 400px) {
-    body{
-        justify-content: center;
-        align-items: center;
+    .container{
+        margin-top: 7rem;
     }
 
     .header {
