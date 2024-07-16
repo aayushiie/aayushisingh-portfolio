@@ -381,7 +381,7 @@ li{
     background: var(--white);
 }
 
-
+/* responsive styles*/
 @media (max-width: 1200px) {
     .header {
         font-size: 3rem;
@@ -444,6 +444,18 @@ li{
 
     .left.image img {
         height: 40px;
+    }
+
+    #menu-button{
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    :root[menu-open] nav {
+        display: flex;
     }
 }
 
