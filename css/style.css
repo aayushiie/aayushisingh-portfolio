@@ -448,8 +448,9 @@ li{
 }
 
 @media (max-width: 576px) {
-    #custom-cursor{
+    body:hover #custom-cursor{
         visibility: hidden;
+        opacity: 0;
     }
 
     .container{
