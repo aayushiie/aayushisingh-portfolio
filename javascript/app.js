@@ -41,7 +41,7 @@ window.addEventListener('mousemove', (event) => {
 hoverSpaces.forEach(space => {
     space.addEventListener('mouseenter', () => {
         customCursor.classList.add('zoom');
-        space.style.color = 'var(--magenta)';
+        space.style.color = 'var(--black)';
     });
     space.addEventListener('mouseleave', () => {
         customCursor.classList.remove('zoom');
