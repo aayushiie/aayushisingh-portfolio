@@ -467,7 +467,7 @@ section a:hover:after {
 
     .left,
     .right {
-        margin: 2rem 0;
+        margin: 2rem 1rem;
     }
 
     section {
