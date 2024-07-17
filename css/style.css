@@ -55,7 +55,7 @@ body:hover #custom-cursor{
     transform: scale(3);
   }
 
-html{
+body{
     animation: down .8s;
 }
 
@@ -408,6 +408,49 @@ a:hover {
     width: 100%;
     background: var(--white);
 }
+
+.loader-container {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background-color: var(--black);
+    display: grid;
+    place-content: center;
+    transition: opacity .4s ease-in-out, visibility .4s ease-in-out;
+}
+
+.loader {
+    width: 4rem;
+    height: 4rem;
+    border: .4rem solid var(--brown);
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: .8s ease infinite alternate spin;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(1turn) scale(1.2);
+    }
+}
+
+.loader-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#page-content {
+    opacity: 0;
+    transform: translate3d(0, -1rem, 0);
+    transition: opacity .6s ease-in-out, transform .6s ease-in-out;
+}
+
+#page-content.visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
 
 /* responsive design*/
 @media (max-width: 1200px) {
