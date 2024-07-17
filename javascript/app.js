@@ -3,9 +3,22 @@ const menuButton = document.querySelector('#menu-button');
 const rootElement = document.documentElement;
 
 menuButton.addEventListener('click', () => {
-    rootElement.toggleAttribute('menu-open');
+    const menuOpen = rootElement.toggleAttribute('menu-open');
+    
+    if (menuOpen) {
+        disableScroll();
+    } else {
+        enableScroll();
+    }
 });
 
+function disableScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+    document.body.style.overflow = '';
+}
 
 //link added to logo
 const logo = document.querySelector('.left.image img')
