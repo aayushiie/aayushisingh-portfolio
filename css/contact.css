@@ -464,7 +464,6 @@ section a:hover:after {
     nav {
         flex-direction: row;
         margin-left: 0.5rem;
-        margin-right: 0.5rem;
     }
 
     .left,
