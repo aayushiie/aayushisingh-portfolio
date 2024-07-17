@@ -451,7 +451,7 @@ section a:hover:after {
     } */
     
     .col-2{
-        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .head {
