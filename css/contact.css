@@ -455,7 +455,7 @@ section a:hover:after {
         font-size: 2.5rem;
     }
 
-    .col-2.name{
+    .col-2 .name{
         margin-top: 1.5rem;
     }
 }
@@ -463,12 +463,12 @@ section a:hover:after {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        justify-content: space-around;
+        /* justify-content: space-around; */
     }
 
     .left,
     .right {
-        margin: 2rem 2rem;
+        margin: 2rem 0;
     }
 
     section {
@@ -479,9 +479,9 @@ section a:hover:after {
         font-size: 2rem;
     }
 
-    /* .column{
+    .column{
         margin: 2rem 0;
-    } */
+    }
 }
 
 @media (max-width: 576px) {
