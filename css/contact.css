@@ -463,7 +463,7 @@ section a:hover:after {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        /* justify-content: space-around; */
+        justify-content: space-around;
     }
 
     .left,
@@ -477,10 +477,6 @@ section a:hover:after {
 
     .head {
         font-size: 2rem;
-    }
-
-    .column{
-        margin: 2rem 0;
     }
 }
 
