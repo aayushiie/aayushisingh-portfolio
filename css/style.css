@@ -15,6 +15,9 @@
     --green: #2C7B53;
 }
 
+::selection{
+    background-color: var(--white);
+}
 /* font-family: 'Montserrat',
 sans-serif;
 font-family: "Playfair Display",
@@ -52,6 +55,19 @@ body:hover #custom-cursor{
     transform: scale(3);
   }
 
+html{
+    animation: down .8s;
+}
+
+@keyframes down {
+    from{
+        transform: translateY(-100vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 body {
     background: url(/assets/background\ \(2\).png) no-repeat center center/cover;
     display: flex;
@@ -61,6 +77,8 @@ body {
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 
@@ -172,13 +190,22 @@ nav{
     width: 100%;
     display: flex;
     flex-direction: row; 
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     z-index: 100;
     position: relative;
-    margin-top: 3rem;
     /* padding: 1rem 0; */
+}
+
+.left{
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+.right{
+    margin-top: 3rem;
+    margin-right: 8rem;
 }
 
 .left.image img{
@@ -194,6 +221,7 @@ a{
     font-size: .875rem;
     transition: color .3s ease-in-out;
 }
+
 
 a:hover {
     color: var(--white);
@@ -282,14 +310,16 @@ li{
     opacity: 0;
     text-align: left;
     transition: opacity .2s ease-in-out;
+    visibility: hidden;
 }
 
 :root[menu-open] #menu-container {
-    height: 80vh;
+    height: 100vh;
 }
 
 :root[menu-open] #menu-container li {
     opacity: 1;
+    visibility: visible;
 }
 
 :root[menu-open] #nav-social a {
@@ -421,6 +451,14 @@ li{
         column-gap: 1rem;
     }
 
+    .container{
+        margin-top: 7rem;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
     .header {
         font-size: 2rem;
     }
@@ -446,17 +484,6 @@ li{
         height: 40px;
     }
 
-    #menu-button{
-        display: flex;
-    }
-
-    nav {
-        display: none;
-    }
-
-    :root[menu-open] nav {
-        display: flex;
-    }
 }
 
 @media (max-width: 576px) {
