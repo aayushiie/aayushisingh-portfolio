@@ -170,7 +170,6 @@ li {
     position: absolute;
     inset: 0;
     background: url(/assets/background\ \(2\).png) no-repeat center center/cover;
-    /* background: var(--black); */
     text-align: center;
     display: grid;
     place-content: center;
@@ -463,6 +462,8 @@ section a:hover:after {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
+        align-items: center;
+        column-gap: 5rem;
     }
 
     .left,
