@@ -272,23 +272,6 @@ section {
     margin: 2rem 16rem;
 }
 
-.middle {
-    padding: 0;
-    margin: 0;
-    height: 15rem;
-    width: 28rem;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    padding-bottom: .5rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    color: var(--white);
-    background-color: var(--black);
-    font-family: "Playfair Display", serif;
-    font-size: 8rem;
-}
-
 .divider {
     border: 1px solid var(--black);
     width: 100%;
@@ -460,10 +443,6 @@ h6 {
         margin: 2rem 8rem;
     }
 
-    .middle {
-        font-size: 6rem;
-    }
-
     .head {
         font-size: 3rem;
     }
@@ -489,10 +468,6 @@ h6 {
         width: 30px;
     }
 
-    .middle {
-        font-size: 5rem;
-    }
-
     .head {
         font-size: 2.5rem;
     }
@@ -501,6 +476,7 @@ h6 {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
+        align-items: center;
     }
 
     .left,
@@ -510,12 +486,6 @@ h6 {
 
     section {
         margin: 2rem 4rem;
-    }
-
-    .middle {
-        font-size: 4rem;
-        width: 24rem;
-        height: 10rem;
     }
 
     .head {
@@ -547,12 +517,6 @@ h6 {
 
     section {
         margin: 2rem 2rem;
-    }
-
-    .middle {
-        font-size: 3rem;
-        width: 14rem;
-        height: 8rem;
     }
 
     .head {
