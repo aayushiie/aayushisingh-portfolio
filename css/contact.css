@@ -449,6 +449,10 @@ section a:hover:after {
         align-items: center;
         row-gap: 1rem;
     } */
+    
+    .col-2{
+        justify-content: flex-start;
+    }
 
     .head {
         font-size: 2.5rem;
@@ -484,6 +488,18 @@ section a:hover:after {
     body:hover #custom-cursor {
         visibility: hidden;
         opacity: 0;
+    }
+
+    .left.image img{
+        height: 30px;
+    }
+
+    .left{
+        margin-left: 1rem;
+    }
+
+    .right{
+        margin-right: 1rem;
     }
 
     section {

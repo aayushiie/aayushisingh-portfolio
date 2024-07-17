@@ -533,6 +533,18 @@ h6 {
         opacity: 0;
     }
 
+    .left.image img{
+        height: 30px;
+    }
+
+    .left{
+        margin-left: 1rem;
+    }
+
+    .right{
+        margin-right: 1rem;
+    }
+
     section {
         margin: 2rem 2rem;
     }
