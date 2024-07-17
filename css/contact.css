@@ -463,7 +463,6 @@ section a:hover:after {
 @media (max-width: 768px) {
     nav {
         flex-direction: row;
-        margin-left: 0.5rem;
     }
 
     .left,
