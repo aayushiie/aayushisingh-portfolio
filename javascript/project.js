@@ -62,18 +62,18 @@ window.addEventListener('load', () => {
 })
 
 //links
-// const writing = document.querySelector('.card-1')
-// logo.addEventListener('click', (event) => {
-//     // window.location.href = '/layout/writing.html';
-//     window.location.href = '/index.html';
-// });
+const writing = document.querySelector('.card-1')
+writing.addEventListener('click', (event) => {
+    const targetPath = '/layout/writing.html';
+    window.location.href = targetPath;
+});
 
-// const design = document.querySelector('.card-2')
-// logo.addEventListener('click', (event) => {
-//     window.location.href = '/layout/design.html';
-// });
+const design = document.querySelector('.card-2')
+design.addEventListener('click', (event) => {
+    window.location.href = '/layout/design.html';
+});
 
-// const program = document.querySelector('.card-3')
-// logo.addEventListener('click', (event) => {
-//     window.location.href = '/layout/program.html';
-// });
+const program = document.querySelector('.card-3')
+program.addEventListener('click', (event) => {
+    window.location.href = '/layout/program.html';
+});

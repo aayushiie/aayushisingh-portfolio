@@ -82,7 +82,7 @@ main {
 }
 
 body {
-    background: url(/assets/background.png) no-repeat center center/cover;
+    background: url(/assets/background.jpg) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -495,6 +495,7 @@ h6 {
 
     .bottom {
         flex-direction: column;
+        row-gap: 1rem;
     }
 }
 

@@ -305,13 +305,13 @@ li {
 body {
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
-  background: url(/assets/) no-repeat center center/cover;
+  background: url(/assets/background-white.jpg) no-repeat center center/cover;
 }
 
 .container {
   position: absolute;
-  height: 380px;
   width: 800px;
+  height: 380px;
   top: 60px;
   left: calc(50% - 300px);
   display: flex;
@@ -320,8 +320,8 @@ body {
 
 .card {
   display: flex;
-  height: 360px;
   width: 280px;
+  height: 360px;
   border: var(--magenta) 1px solid;
   border-radius: 10px;
   transition: 0.4s ease-out;
@@ -366,55 +366,74 @@ body {
   background-size: contain;
 }
 
-/*
-.container {
-  position: absolute;
-  height: 300px;
-  width: 600px;
-  top: 60px;
-  left: calc(50% - 300px);
-  display: flex;
-  margin-top: 8rem;
+/* responsive design */
+@media (max-width: 1200px) {
+  .container{
+    margin-top: 8rem;
+  }
 }
 
-.card {
-  border-radius: 10px;
-  display: flex;
-  height: 280px;
-  width: 200px;
-  border: black 2px solid; */
-/* box-shadow: -1rem 0 3rem #D1A286; */
-/*   margin-left: -50px;
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
+@media (max-width: 992px) {
+  .left,
+  .right {
+    margin: 2rem 2rem;
+  }
+
+  #menu-button {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #menu-button span {
+    width: 30px;
+  }
+
 }
 
-.card:not(:first-child) {
-  margin-left: -50px;
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    align-items: center;
+    column-gap: 5rem;
+  }
+
+  .left,
+  .right {
+    margin: 2rem 0;
+  }
+
 }
 
-.card:hover {
-  transform: translateY(-20px);
-  transition: 0.4s ease-out;
-}
+@media (max-width: 576px) {
+  body:hover #custom-cursor {
+    visibility: hidden;
+    opacity: 0;
+  }
 
-.card:hover~.card {
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-}
+  .left.image img {
+    height: 30px;
+  }
 
-.card-1 {
-  background: url(/assets/Writer.jpg) no-repeat center center/cover;
-}
+  .left {
+    margin-left: 1rem;
+  }
 
-.card-2{
-  background: url(/assets/Developer.jpg) no-repeat center center/cover;
-}
+  .right {
+    margin-right: 1rem;
+  }
 
-.card-3{
-  background: url(/assets/Designer.jpg) no-repeat center center/cover;
-}
+  .container{
+    width: 420px;
+    height: 220px;
+    margin-top: 5rem;
+    left: 0;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 
-*/
+  .card{
+    width: 220px;
+    height: 220px;
+  }
+
+}
