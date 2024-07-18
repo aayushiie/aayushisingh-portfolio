@@ -70,10 +70,10 @@ writing.addEventListener('click', (event) => {
 
 const design = document.querySelector('.card-2')
 design.addEventListener('click', (event) => {
-    window.location.href = '/layout/design.html';
+    window.location.href = '/layout/program.html';
 });
 
 const program = document.querySelector('.card-3')
 program.addEventListener('click', (event) => {
-    window.location.href = '/layout/program.html';
+    window.location.href = '/layout/design.html';
 });
