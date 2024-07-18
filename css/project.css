@@ -309,20 +309,18 @@ body {
   background: url(/assets/background-white.jpg) no-repeat center center/cover;
 }
 
-/* main{
-  width: 100%;
+section{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
 .container {
   position: absolute;
   width: 800px;
   height: 380px;
   top: 60px;
-  left: calc(50% - 300px);
+  /* left: calc(50% - 300px); */
   display: flex;
   margin-top: 6rem;
 }
@@ -378,7 +376,12 @@ body {
 /* responsive design */
 @media (max-width: 1200px) {
   .container{
-    margin-top: 8rem;
+    width: 90%;
+    max-width: 800px;
+    margin: 6rem auto 0;
+    position: static;
+    top: auto;
+    left: auto;
   }
 }
 
@@ -411,6 +414,46 @@ body {
     margin: 2rem 0;
   }
 
+  .container{
+    width: 90%;
+    max-width: 400px;
+    margin: 4rem auto;
+    flex-direction: column;
+  }
+
+  .card{
+    width: calc(100% - 20px);
+    max-width: 280px;
+    height: 300px;
+    margin-top: 2rem;
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:not(:first-child){
+    margin-top: 1rem;
+    margin-left: 10px;
+  }
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .card .card-content{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+  }
+
+  .card:hover .card-content{
+    transform: scale(1.05);
+  }
 }
 
 @media (max-width: 576px) {
@@ -430,25 +473,4 @@ body {
   .right {
     margin-right: 1rem;
   }
-
-  /* .container{
-    width: 380px;
-    height: 200px;
-    margin-top: 8rem;
-    left: 0;
-    margin-left: 2rem;
-  }
-
-  .card{
-    width: 140px;
-    height: 180px;
-  } */
-
-  .container{
-    flex-direction: column;
-    margin-top: 4rem;
-    margin-left: 2rem;
-    left: 0;
-  }
-
 }
