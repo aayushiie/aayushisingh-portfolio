@@ -419,10 +419,6 @@ body {
     opacity: 0;
   }
 
-  section{
-    height: 50vh;
-  }
-
   .left.image img {
     height: 30px;
   }
@@ -435,7 +431,7 @@ body {
     margin-right: 1rem;
   }
 
-  .container{
+  /* .container{
     width: 380px;
     height: 200px;
     margin-top: 8rem;
@@ -446,6 +442,13 @@ body {
   .card{
     width: 140px;
     height: 180px;
+  } */
+
+  .container{
+    flex-direction: column;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    left: 0;
   }
 
 }
