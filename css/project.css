@@ -162,7 +162,6 @@ li {
   position: absolute;
   inset: 0;
   background: url(/assets/background\ \(2\).png) no-repeat center center/cover;
-  /* background: var(--black); */
   text-align: center;
   display: grid;
   place-content: center;
@@ -304,9 +303,19 @@ li {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   background: url(/assets/background-white.jpg) no-repeat center center/cover;
 }
+
+/* main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 
 .container {
   position: absolute;
@@ -423,17 +432,16 @@ body {
   }
 
   .container{
-    width: 420px;
-    height: 220px;
-    margin-top: 5rem;
+    width: 380px;
+    height: 200px;
+    margin-top: 8rem;
     left: 0;
     margin-left: 2rem;
-    margin-right: 2rem;
   }
 
   .card{
-    width: 220px;
-    height: 220px;
+    width: 140px;
+    height: 180px;
   }
 
 }
