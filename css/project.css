@@ -419,6 +419,7 @@ section{
     max-width: 400px;
     margin: 4rem auto;
     flex-direction: column;
+    justify-content: center;
   }
 
   .card{
