@@ -326,11 +326,6 @@ section h6{
     transition: font-style .3s ease-in;
 }
 
-
-
-
-
-
 .loader-container {
     position: fixed;
     inset: 0;
@@ -417,6 +412,14 @@ section h6{
     section {
         margin: 2rem 2rem;
     }
+
+    .sample img{
+        max-width: 200px;
+    }
+    
+    .project:nth-child(2) .sample img{
+        max-width: 400px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -439,5 +442,13 @@ section h6{
 
     section {
         margin: 1rem 1rem;
+    }
+
+    .sample img{
+        max-width: 150px;
+    }
+
+    .project:nth-child(2){
+        flex-direction: column;
     }
 }
