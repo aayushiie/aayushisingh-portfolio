@@ -166,10 +166,6 @@
           </figure>
         </li>
 
-
-        
-       
-        
       </ul>
     </section>
 
@@ -178,6 +174,20 @@
 
   <script src="/javascript/project.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        function handleTouchStart(event) {
+            const figure = event.currentTarget;
+            figure.classList.toggle('tapped');
+        }
+
+        const figures = document.querySelectorAll('figure');
+        figures.forEach(figure => {
+            figure.addEventListener('touchstart', handleTouchStart);
+        });
+    });
+</script>
 </body>
 
 </html>

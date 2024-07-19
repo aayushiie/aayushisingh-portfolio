@@ -326,6 +326,7 @@ figure {
     width: 100%;
     height: 100%;
     position: relative;
+    border-radius: 1rem;
 }
 
 figcaption {
@@ -503,6 +504,10 @@ figure footer {
     #menu-button span {
         width: 30px;
     }
+
+    section{
+        margin: 2rem 4rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -518,7 +523,7 @@ figure footer {
     }
 
     section {
-        margin: 2rem 4rem;
+        margin: 2rem 2rem;
     }
 }
 
@@ -541,6 +546,65 @@ figure footer {
     }
 
     section {
-        margin: 2rem 2rem;
+        margin: 1rem 1rem;
     }
+}
+
+
+figure.main,
+figure footer {
+    opacity: 0;
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+figure.tapped main,
+figure.tapped footer {
+    opacity: 1;
+}
+
+figure figcaption::before {
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+figure.tapped figcaption::before {
+    opacity: 1;
+}
+
+figure a img {
+    transform: scale(1.2);
+    transition: transform .3s ease-in-out;
+}
+
+figure.tapped a img {
+    transform: scale(1);
+}
+
+figure main {
+    transform: translate3d(0, -6rem, 0);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+figure.tapped main {
+    transform: translate3d(0, 0, 0);
+}
+
+figure footer {
+    transform: translate3d(0, 6rem, 0);
+    transition: opacity .3s ease-in-out, transform .3s ease-in-out;
+}
+
+figure.tapped footer {
+    transform: translate3d(0, 0, 0);
+}
+
+figure footer img {
+    transform: translate3d(-3rem, 0, 0) rotate(360deg);
+    transition-delay: var(--def-transition-duration);
+    opacity: 0;
+}
+
+figure.tapped footer img {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+    opacity: 1;
 }
