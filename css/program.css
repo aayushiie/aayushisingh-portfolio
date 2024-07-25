@@ -333,30 +333,79 @@ section div{
 
 .small-box{
     border: 1px solid var(--purple);
-    height: 20rem;
+    height: 18rem;
     width: 20rem;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* justify-content: space-between; */
     row-gap: .5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
-
 
 .large-box{
     border: 1px solid var(--purple);
-    height: 20rem;
+    height: 18rem;
     width: 28rem;
     border-radius: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    /* justify-content: space-between; */
+    row-gap: .5rem;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row-1{
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     row-gap: .5rem;
 }
+
+.small-box .row-2{
+    position: relative;
+    top: 1.5rem;
+    left: 4rem; 
+}
+
+.large-box .row-2{
+    position: relative;
+    top: 1.5rem;
+    right: 8.5rem;
+}
+
+.small-box img{
+    max-width: 18rem;
+    transition: transform .3s ease-in-out;
+}
+
+.large-box img{
+    max-width: 20rem;
+    transition: transform .3s ease-in-out;
+}
+
+.small-box:hover,
+.large-box:hover{
+    box-shadow: 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
+    transform: translateY(-1rem);
+}
+
+.small-box:hover img{
+    transform: translateY(-2rem);
+    transform: translateX(-1.75rem);
+}
+
+.large-box:hover img{
+    transform: translateY(2rem);
+    transform: translateX(2rem);
+}
+
 
 .small-box:nth-child(1){
     background-color: #C83144;
@@ -368,39 +417,72 @@ section div{
 }
 
 .side h4{
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
-.side p{
-    font-weight: 300;
-    font-size: .75rem;
-}
-
-.small-box img{
-    max-width: 16rem;
-    margin-top: 2rem;
-    animation: uplift .3s ease-in-out;
-}
-
-.large-box img{
-    max-width: 20rem;
-    margin-top: 2rem;
-    animation: uplift .3s ease-in-out;
-}
-
-@keyframes uplift {
-
-    
-}
-
-.side span{
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
-section .github{
-    
+.side p{
+    font-weight: 400;
+    font-size: .65rem;
 }
+
+
+.side span{
+    font-weight: 600;
+    padding-right: .25rem;
+}
+
+.divider{
+    width: 100%;
+    position: relative;
+    border: 1px solid var(--purple);
+}
+
+section .github{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center; 
+    font-size: 1.5rem;
+}
+
+section .github a{
+    display: inline-block;
+    line-height: 1;
+    margin-bottom: 1.75rem;
+    position: relative;
+    transition: color .5s ease-in-out;
+    font-weight: 600;
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+section .github a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 6px;
+    right: 0;
+    background-color: var(--black);
+    transition: width .2s ease;
+}
+
+section .github a:hover::after{
+    width: 100%;
+    left: 0;
+    background-color: var(--black);
+}
+
+section .github img{
+    display: inline-flex;
+    position: relative;
+    top: 5px;
+    width: 24px;
+}
+
+
 
 
 

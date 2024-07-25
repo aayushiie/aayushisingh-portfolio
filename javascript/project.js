@@ -77,3 +77,4 @@ const program = document.querySelector('.card-3')
 program.addEventListener('click', (event) => {
     window.location.href = '/layout/design.html';
 });
+
