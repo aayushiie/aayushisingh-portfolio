@@ -306,6 +306,7 @@ body {
     flex-direction: column;
     height: 100vh;
     background: url(/assets/background-white.jpg) no-repeat center center/cover;
+    font-family: 'Montserrat', sans-serif;
 }
 
 section{
