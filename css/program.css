@@ -556,6 +556,15 @@ section .github img{
         flex-direction: column;
     }
 
+    .large-box{
+        width: 20rem;
+    }
+
+    .large-box .row-2{
+        right: 4rem;
+        top: 1rem;
+    }
+
 }
 
 @media (max-width: 576px) {
