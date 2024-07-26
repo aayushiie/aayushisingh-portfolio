@@ -344,6 +344,7 @@ section div{
     row-gap: .5rem;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    user-select: none;
 }
 
 .large-box{
@@ -358,6 +359,7 @@ section div{
     row-gap: .5rem;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    user-select: none;
 }
 
 .row-1{
@@ -588,10 +590,5 @@ section .github img{
 
     section {
         margin: 1rem 1rem;
-    }
-
-    .small-box,
-    .large-box{
-        user-select: none;
     }
 }
