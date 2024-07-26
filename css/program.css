@@ -369,14 +369,14 @@ section div{
 
 .small-box .row-2{
     position: relative;
-    top: 1.5rem;
+    top: 1.2rem;
     left: 4rem; 
 }
 
 .large-box .row-2{
     position: relative;
-    top: 1.5rem;
-    right: 8.5rem;
+    top: 1rem;
+    right: 8.75rem;
 }
 
 .small-box img{
@@ -389,11 +389,18 @@ section div{
     transition: transform .3s ease-in-out;
 }
 
-.small-box:hover,
+.small-box:hover{
+    box-shadow: 2px 5px rgba(0,0,0,0.1);
+    transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
+    transform: translateY(1rem);
+    transform: translateX(1rem);
+}
+
 .large-box:hover{
     box-shadow: 2px 5px rgba(0,0,0,0.1);
     transition: box-shadow .3s ease-in-out, transform .3s ease-in-out;
     transform: translateY(-1rem);
+    transform: translateX(-1rem);
 }
 
 .small-box:hover img{
@@ -403,17 +410,17 @@ section div{
 
 .large-box:hover img{
     transform: translateY(2rem);
-    transform: translateX(2rem);
+    transform: translateX(1.75rem);
 }
 
 
 .small-box:nth-child(1){
-    background-color: #C83144;
+    background-color: var(--black);
     color: var(--white);
 }
 
 .large-box:nth-child(1){
-    background-color: #B8C9BB;
+    background-color: var(--white);
 }
 
 .side h4{
@@ -481,15 +488,6 @@ section .github img{
     top: 5px;
     width: 24px;
 }
-
-
-
-
-
-
-
-
-
 
 /* responsive design */
 @media (max-width: 1200px) {
