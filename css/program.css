@@ -554,6 +554,7 @@ section .github img{
 
     .side{
         flex-direction: column;
+        row-gap: 2rem;
     }
 
     .large-box{
