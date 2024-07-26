@@ -306,6 +306,7 @@ body {
     flex-direction: column;
     height: 100%;
     background: url(/assets/background-white.jpg) no-repeat center center/cover;
+    /* background: url(/assets/background-white.jpg) no-repeat center center/cover; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -497,7 +498,6 @@ section .github img{
 }
 
 @media (max-width: 992px) {
-
     .left,
     .right {
         margin: 2rem 2rem;
@@ -515,6 +515,10 @@ section .github img{
     section {
         margin: 2rem 4rem;
     }
+
+    .side{
+        column-gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -531,6 +535,25 @@ section .github img{
 
     section {
         margin: 2rem 2rem;
+    }
+
+    .small-box,
+    .large-box,
+    .small-box img,
+    .large-box img
+    {
+        transition: none;
+    }
+
+    .small-box:hover,
+    .large-box:hover,
+    .small-box:hover img,
+    .large-box:hover img{
+        transform: none;
+    }
+
+    .side{
+        flex-direction: column;
     }
 
 }
