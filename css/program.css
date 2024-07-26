@@ -590,4 +590,8 @@ section .github img{
         margin: 1rem 1rem;
     }
 
+    .small-box,
+    .large-box{
+        user-select: none;
+    }
 }
