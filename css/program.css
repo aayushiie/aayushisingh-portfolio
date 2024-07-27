@@ -324,11 +324,28 @@ section div{
     align-items: center;
     column-gap: 1rem;
     cursor: pointer;
-    color: var(--black);
+    /* color: var(--black); */
 }
 
 .side a{
     text-decoration: none;
+}
+
+.small-box a, 
+.small-box h4, 
+.small-box p, 
+.small-box:hover a, 
+.small-box:hover h4, 
+.small-box:hover p {
+    color: var(--white);
+}
+
+.large-box a, 
+.large-box h4, 
+.large-box p, 
+.large-box:hover a, 
+.large-box:hover h4, 
+.large-box:hover p {
     color: var(--black);
 }
 
@@ -345,10 +362,12 @@ section div{
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
     user-select: none;
+    background-color: var(--black);
 }
 
 .large-box{
     border: 1px solid var(--purple);
+    background-color: var(--white);
     height: 18rem;
     width: 28rem;
     border-radius: 2rem;
@@ -372,13 +391,13 @@ section div{
 
 .small-box .row-2{
     position: relative;
-    top: 1.2rem;
+    top: 1.75rem;
     left: 4rem; 
 }
 
 .large-box .row-2{
     position: relative;
-    top: 1rem;
+    top: 1.5rem;
     right: 8.75rem;
 }
 
@@ -414,16 +433,6 @@ section div{
 .large-box:hover img{
     transform: translateY(2rem);
     transform: translateX(1.75rem);
-}
-
-
-.small-box:nth-child(1){
-    background-color: var(--black);
-    color: var(--white);
-}
-
-.large-box:nth-child(1){
-    background-color: var(--white);
 }
 
 .side h4{
