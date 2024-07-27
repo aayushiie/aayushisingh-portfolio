@@ -115,21 +115,6 @@
   <script src="/javascript/project.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const smallBox = document.querySelector('.small-box');
-        const largeBox = document.querySelector('.large-box');
-    
-        function preventTap(e) {
-            e.preventDefault();
-            e.stopPropagation();
-        }
-    
-        smallBox.addEventListener('touchstart', preventTap);
-        largeBox.addEventListener('touchstart', preventTap);
-    });
-    </script>
-    
 </body>
 
 </html>
