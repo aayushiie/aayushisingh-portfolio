@@ -306,7 +306,6 @@ body {
     flex-direction: column;
     height: 100%;
     background: url(/assets/background-white.jpg) no-repeat center center/cover;
-    /* background: url(/assets/background-white.jpg) no-repeat center center/cover; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -323,8 +322,6 @@ section div{
     justify-content: space-between;
     align-items: center;
     column-gap: 1rem;
-    cursor: pointer;
-    /* color: var(--black); */
 }
 
 .side a{
@@ -361,8 +358,8 @@ section div{
     row-gap: .5rem;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    user-select: none;
     background-color: var(--black);
+    cursor: pointer;
 }
 
 .large-box{
@@ -378,7 +375,7 @@ section div{
     row-gap: .5rem;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    user-select: none;
+    cursor: pointer;
 }
 
 .row-1{
@@ -459,7 +456,6 @@ section div{
 
 section .github{
     display: flex;
-    /* align-items: center; */
     justify-content: center; 
     font-size: 1.5rem;
 }
